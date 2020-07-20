@@ -20,6 +20,12 @@ def process_comment(submission):
         normalized_comment = top_level_comment.body.lower()
         for indiv_misspelling in misspellings1:
             # if there's a misspelling, reply to comment and correct him/her
+
+            #===============ERROR===============#
+            # "in" counts all variations of "separate", 
+        # so only the first correction is ever commented 
+            #===============ERROR===============#
+
             if indiv_misspelling in normalized_comment:
                 print("Replying to correct spelling")
                 top_level_comment.reply("I think you mean s-e-p-a-r-a-t-e ;)")

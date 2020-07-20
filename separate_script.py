@@ -1,9 +1,6 @@
 import praw
 
-#maybe do something cool w permutations of capital letters in the future
 misspellings1 = ["seperate", "seperete", "separete"]
-misspellings2 = ["seperated", "sepereted", "separeted"]
-misspellings3 = ["seperately", "seperetely", "separetely"]
 
 def main():
     reddit = praw.Reddit("bot1", user_agent="PySeparate Bot 0.1")
